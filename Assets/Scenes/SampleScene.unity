@@ -371,6 +371,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7668198325355617444, guid: 2565148372a1f9c429c56aae332e2ed8, type: 3}
+      propertyPath: _motion.rotationOffset.y
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 111136225002677554, guid: 2565148372a1f9c429c56aae332e2ed8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
