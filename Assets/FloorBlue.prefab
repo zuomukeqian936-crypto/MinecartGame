@@ -199,12 +199,12 @@ MonoBehaviour:
     _isRoot: 1
   bounds:
     center: {x: 0, y: 0, z: 0}
-    extents: {x: 5, y: 0, z: 5}
-    max: {x: 5, y: 0, z: 5}
-    min: {x: -5, y: 0, z: -5}
-    size: {x: 10, y: 0, z: 10}
+    extents: {x: 5, y: 1.110223e-16, z: 5}
+    max: {x: 5, y: 1.110223e-16, z: 5}
+    min: {x: -5, y: -1.110223e-16, z: -5}
+    size: {x: 10, y: 2.220446e-16, z: 10}
   builders: []
-  unpacked: 1
+  unpacked: 0
   alwaysDraw: 0
   drawGeneratedSpline: 1
   drawGeneratedSamples: 1
@@ -212,4 +212,4 @@ MonoBehaviour:
   drawEntranceAndExit: 1
   drawBounds: 1
   drawCustomPaths: 1
-  editorChildCount: 0
+  editorChildCount: 1
