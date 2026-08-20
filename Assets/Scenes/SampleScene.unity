@@ -203,7 +203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineFollow
   TrackerSettings:
     BindingMode: 4
-    PositionDamping: {x: 1, y: 1, z: 1}
+    PositionDamping: {x: 0, y: 0, z: 0}
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
@@ -259,7 +259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689117121}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.24253564, y: 6.9953193e-10, z: -1.7488298e-10, w: 0.97014254}
+  m_LocalRotation: {x: 0.24253559, y: -0.00000044949866, z: 0.00000011237465, w: 0.97014254}
   m_LocalPosition: {x: 0, y: 8, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -363,6 +363,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &734890164
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0d202d460f6a6cc4b9c120c1650f3b43, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.93
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d202d460f6a6cc4b9c120c1650f3b43, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.68
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d202d460f6a6cc4b9c120c1650f3b43, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 77.110725
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d202d460f6a6cc4b9c120c1650f3b43, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d202d460f6a6cc4b9c120c1650f3b43, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d202d460f6a6cc4b9c120c1650f3b43, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d202d460f6a6cc4b9c120c1650f3b43, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d202d460f6a6cc4b9c120c1650f3b43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d202d460f6a6cc4b9c120c1650f3b43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d202d460f6a6cc4b9c120c1650f3b43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d202d460f6a6cc4b9c120c1650f3b43, type: 3}
+      propertyPath: m_Name
+      value: railPrefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d202d460f6a6cc4b9c120c1650f3b43, type: 3}
 --- !u!1001 &866336265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -586,7 +643,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.24253565, y: 6.99532e-10, z: -1.7488301e-10, w: 0.97014254}
+  m_LocalRotation: {x: 0.2425356, y: -0.0000004494987, z: 0.000000112374664, w: 0.97014254}
   m_LocalPosition: {x: 0, y: 8, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -709,3 +766,4 @@ SceneRoots:
   - {fileID: 866336265}
   - {fileID: 689117126}
   - {fileID: 1908263756}
+  - {fileID: 734890164}
