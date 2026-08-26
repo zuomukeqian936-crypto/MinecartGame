@@ -1,18 +1,19 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     [Header("参照先")]
     [SerializeField] private GameState _gameState;
 
-    private GameState nowGame = GameState.None;
-    private GameState nextGame = GameState.MainGame;
+    private GameState _nowGame = GameState.None;
+    private GameState _nextGame = GameState.MainGame;
     
 
     // Update is called once per frame
     void Update()
     {
-        switch (nowGame)
+        switch (_nowGame)
         {
             case GameState.TitleGame:
                 UpdateTitleGame();
@@ -34,7 +35,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void UpdateTitleGame()
     {
-
+        SceneManager.LoadScene("MainScene");
     }
 
     /// <summary>
@@ -42,7 +43,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void UpdateMainGame()
     {
-
+        SceneManager.LoadScene("ResultScene");
     }
 
     /// <summary>
@@ -50,7 +51,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void UpdateResultGame()
     {
-
+        SceneManager.LoadScene("TitleScene");
     }
 
     /// <summary>
@@ -58,10 +59,10 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void ChangeStats()
     {
-        if(nextGame != GameState.None)
+        if(_nextGame != GameState.None)
         {
-            nowGame = nextGame;
-            nextGame = GameState.None;
+            _nowGame = _nextGame;
+            _nextGame = GameState.None;
         }
     }
 }
