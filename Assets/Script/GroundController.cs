@@ -1,53 +1,35 @@
-using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// 地面生成させるクラス
-/// </summary>
 public class GroundController : MonoBehaviour
 {
-    [Header("参照")]
-    [Tooltip("参照する地面リスト一覧")]
-    [SerializeField] private List<GameObject> _groundPrefabs;
+    [Header("地面の設定")]
+    [InspectorName("移動速度")]
+    [SerializeField] private float _groundSpeed = 10f;
+    [InspectorName("移動方向")]
+    [SerializeField] private Vector3 _groundMoveDirection;
 
-    [Tooltip("地面の生成枚数")]
-    [SerializeField] private int _groundCount = 10;
+    private float _groundRadius;
 
-    //使用している地面
-    private GameObject _nowGround;
+    private Rigidbody _rigidbody;
 
-    [Tooltip("")]
+    void Awake()
+    {
+        _rigidbody = GetComponent<Rigidbody>();
+    }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        _groundRadius = transform.position.x;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        MoveGround();
     }
 
-    /// <summary>
-    /// prefabリストから使用していない地面を選択し自動生成する処理
-    /// </summary>
-    private void UpdateGround()
+    private void MoveGround()
     {
-        for (int i = 0; i < _groundPrefabs.Count; i++)
-        {
-            if (_nowGround != _groundPrefabs[i])
-            {
-                _groundPrefabs[i].SetActive(true);
-                _nowGround = _groundPrefabs[i];
-            }
-            else if (_nowGround == _groundPrefabs[i])
-            {
-                continue;
-            }
-        }
+        _rigidbody.linearVelocity = _groundMoveDirection * _groundSpeed;
     }
-
-   // private void 
 }
