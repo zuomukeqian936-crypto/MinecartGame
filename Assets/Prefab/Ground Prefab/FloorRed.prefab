@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4777032019504288276}
   - component: {fileID: 5369265825672752}
   - component: {fileID: 542201813029819323}
+  - component: {fileID: -6739427726031715036}
   m_Layer: 0
   m_Name: FloorRed
   m_TagString: Untagged
@@ -149,7 +150,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6534229350943585911}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 972ea89ac0ab9d04f9100390a2dbf8d3, type: 3}
   m_Name: 
@@ -213,3 +214,17 @@ MonoBehaviour:
   drawBounds: 1
   drawCustomPaths: 1
   editorChildCount: 0
+--- !u!114 &-6739427726031715036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6534229350943585911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6d2cd1c3203d24889eeacf84793ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundController
+  _groundSpeed: 10
+  _groundMoveDirection: {x: 0, y: 0, z: -1}

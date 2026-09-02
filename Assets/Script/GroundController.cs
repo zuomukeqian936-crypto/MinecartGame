@@ -6,7 +6,7 @@ public class GroundController : MonoBehaviour
     [InspectorName("移動速度")]
     [SerializeField] private float _groundSpeed = 10f;
     [InspectorName("移動方向")]
-    [SerializeField] private Vector3 _groundMoveDirection;
+    [SerializeField] private Vector3 _groundMoveDirection = new Vector3(0,0,-1);
 
     private float _groundRadius;
 
@@ -31,5 +31,6 @@ public class GroundController : MonoBehaviour
     private void MoveGround()
     {
         _rigidbody.linearVelocity = _groundMoveDirection * _groundSpeed;
+        Debug.Log(_rigidbody.linearVelocity);
     }
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4468531039999112277}
   - component: {fileID: 5938209924277294428}
   - component: {fileID: 8598250526680730479}
+  - component: {fileID: -1400431000739813040}
   m_Layer: 0
   m_Name: FloorBlue
   m_TagString: Untagged
@@ -149,7 +150,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6843857631735856878}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 972ea89ac0ab9d04f9100390a2dbf8d3, type: 3}
   m_Name: 
@@ -204,7 +205,7 @@ MonoBehaviour:
     min: {x: -5, y: -1.110223e-16, z: -5}
     size: {x: 10, y: 2.220446e-16, z: 10}
   builders: []
-  unpacked: 0
+  unpacked: 1
   alwaysDraw: 0
   drawGeneratedSpline: 1
   drawGeneratedSamples: 1
@@ -212,4 +213,18 @@ MonoBehaviour:
   drawEntranceAndExit: 1
   drawBounds: 1
   drawCustomPaths: 1
-  editorChildCount: 1
+  editorChildCount: 0
+--- !u!114 &-1400431000739813040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6843857631735856878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6d2cd1c3203d24889eeacf84793ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundController
+  _groundSpeed: 10
+  _groundMoveDirection: {x: 0, y: 0, z: -1}
