@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8981561429597791917}
   - component: {fileID: 4777032019504288276}
   - component: {fileID: 5369265825672752}
-  - component: {fileID: 542201813029819323}
   - component: {fileID: -6739427726031715036}
   m_Layer: 0
   m_Name: FloorRed
@@ -143,77 +142,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &542201813029819323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6534229350943585911}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 972ea89ac0ab9d04f9100390a2dbf8d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Dreamteck.Forever::Dreamteck.Forever.LevelSegment
-  type: 0
-  customEntrance: {fileID: 0}
-  customExit: {fileID: 0}
-  customKeepUpright: 0
-  _customMainPath: -1
-  axis: 2
-  customPaths: []
-  objectProperties:
-  - transform: {fileID: 7169836809965379223}
-    localRotation: {x: 0, y: 0, z: 0, w: 1}
-    extrudedMesh: {fileID: 0}
-    extrusionSpriteVertices: []
-    extrusionSpriteUVs: []
-    extrusionSpriteRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    extrudedCollisionMesh: {fileID: 0}
-    _extrusionSettings:
-      meshColliderHandling: 0
-      bendSpline: 0
-      boundsInclusion: -1
-      indexing: 0
-      applyRotation: 1
-      keepUpright: 0
-      upVector: {x: 0, y: 1, z: 0}
-      applyScale: 0
-      bendMesh: 0
-      bendSprite: 0
-      bendPolygonCollider: 0
-      applyMeshColors: 0
-    _settingsComponent: {fileID: 0}
-    overrideSettingsComponent: 0
-    meshFilter: {fileID: 8102884923158869343}
-    meshCollider: {fileID: 4777032019504288276}
-    spriteRenderer: {fileID: 0}
-    splineComputer: {fileID: 0}
-    editSplinePoints: []
-    colliders:
-    - {fileID: 4777032019504288276}
-    _isRoot: 1
-  bounds:
-    center: {x: 0, y: 0, z: 0}
-    extents: {x: 5, y: 1.110223e-16, z: 5}
-    max: {x: 5, y: 1.110223e-16, z: 5}
-    min: {x: -5, y: -1.110223e-16, z: -5}
-    size: {x: 10, y: 2.220446e-16, z: 10}
-  builders: []
-  unpacked: 1
-  alwaysDraw: 0
-  drawGeneratedSpline: 1
-  drawGeneratedSamples: 1
-  drawSampleScale: 1
-  drawEntranceAndExit: 1
-  drawBounds: 1
-  drawCustomPaths: 1
-  editorChildCount: 0
 --- !u!114 &-6739427726031715036
 MonoBehaviour:
   m_ObjectHideFlags: 0

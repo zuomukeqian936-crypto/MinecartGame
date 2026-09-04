@@ -6,14 +6,14 @@ public class GameManager : MonoBehaviour
     [Header("参照先")]
     [SerializeField] private GameState _gameState;
 
-    private GameState _nowGame = GameState.None;
+    private GameState _creentGame = GameState.None;
     private GameState _nextGame = GameState.MainGame;
     
 
     // Update is called once per frame
     void Update()
     {
-        switch (_nowGame)
+        switch (_creentGame)
         {
             case GameState.TitleGame:
                 UpdateTitleGame();
@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
     {
         if(_nextGame != GameState.None)
         {
-            _nowGame = _nextGame;
+            _creentGame = _nextGame;
             _nextGame = GameState.None;
         }
     }
